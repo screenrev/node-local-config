@@ -1,0 +1,24 @@
+{
+  "name": "local-config",
+  "version": "0.0.0",
+  "description": "Load a local config file (.js or .json) as a global module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:screenrev/node-local-config.git"
+  },
+  "keywords": [
+    "local",
+    "config",
+    "chattoo"
+  ],
+  "author": "glen@screenrev.com",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/chattoo/node-local-config/issues"
+  },
+  "homepage": "https://github.com/chattoo/node-local-config"
+}

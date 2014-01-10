@@ -13,12 +13,12 @@
   "keywords": [
     "local",
     "config",
-    "chattoo"
+    "screenrev"
   ],
   "author": "glen@screenrev.com",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/chattoo/node-local-config/issues"
+    "url": "https://github.com/screenrev/node-local-config/issues"
   },
-  "homepage": "https://github.com/chattoo/node-local-config"
+  "homepage": "https://github.com/screenrev/node-local-config"
 }

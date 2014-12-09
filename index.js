@@ -1,10 +1,21 @@
-var config = {};
+var path = require('path');
 
-try {
-	config = require('../../config');
-}
-catch (e) {
-	console.log('ERROR: missing config file in project root');
-}
+module.exports = function (fileName) {
+	var configPath = path.join('../../', fileName || 'config'),
+		conf,
+		local;
 
-module.exports = config;
+	conf = require(configPath);
+
+	try {
+		local = require(configPath + '.local');
+	} catch (e) {
+		return conf;
+	}
+
+	Object.keys(local).forEach(function (key) {
+		conf[key] = local[key];
+	});
+
+	return conf;
+};

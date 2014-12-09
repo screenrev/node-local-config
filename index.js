@@ -17,5 +17,5 @@ module.exports = function (fileName) {
 		conf[key] = local[key];
 	});
 
-	return local;
+	return conf;
 };
